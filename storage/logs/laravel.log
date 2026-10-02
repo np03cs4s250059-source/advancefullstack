@@ -1,0 +1,72 @@
+[2026-10-02 01:52:09] local.ERROR: Command "server" is not defined.
+
+Did you mean one of these?
+    make:observer
+    serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"server\" is not defined.
+
+Did you mean one of these?
+    make:observer
+    serve at /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Application.php:759)
+[stacktrace]
+#0 /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Application.php(298): Symfony\\Component\\Console\\Application->find()
+#1 /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run()
+#3 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate\\Foundation\\Console\\Kernel->handle()
+#4 /home/trex/workshop1/fullstackdevelopmentproject/artisan(16): Illuminate\\Foundation\\Application->handleCommand()
+#5 {main}
+"} 
+[2026-10-02 01:55:10] local.ERROR: SQLSTATE[HY000] [1045] Access denied for user 'trex'@'localhost' (using password: YES) {"exception":"[object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'trex'@'localhost' (using password: YES) at /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:66)
+[stacktrace]
+#0 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(66): PDO->__construct()
+#1 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(85): Illuminate\\Database\\Connectors\\Connector->createPdoConnection()
+#2 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(48): Illuminate\\Database\\Connectors\\Connector->tryAgainIfCausedByLostConnection()
+#3 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection()
+#4 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(220): Illuminate\\Database\\Connectors\\MySqlConnector->connect()
+#5 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#6 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1298): call_user_func()
+#7 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(119): Illuminate\\Database\\Connection->getPdo()
+#8 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(29): Illuminate\\Database\\MySqlConnection->isMaria()
+#9 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Console/ShowCommand.php(52): Illuminate\\Database\\MySqlConnection->getDriverTitle()
+#10 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\ShowCommand->handle()
+#11 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#12 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#13 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#14 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate\\Container\\BoundMethod::call()
+#15 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Console/Command.php(292): Illuminate\\Container\\Container->call()
+#16 /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Command/Command.php(341): Illuminate\\Console\\Command->execute()
+#17 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Console/Command.php(261): Symfony\\Component\\Console\\Command\\Command->run()
+#18 /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Application.php(1117): Illuminate\\Console\\Command->run()
+#19 /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Application.php(356): Symfony\\Component\\Console\\Application->doRunCommand()
+#20 /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun()
+#21 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run()
+#22 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate\\Foundation\\Console\\Kernel->handle()
+#23 /home/trex/workshop1/fullstackdevelopmentproject/artisan(16): Illuminate\\Foundation\\Application->handleCommand()
+#24 {main}
+"} 
+[2026-10-02 01:56:34] local.ERROR: SQLSTATE[HY000] [1044] Access denied for user 'laravel_user'@'localhost' to database 'laravel' {"exception":"[object] (PDOException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user 'laravel_user'@'localhost' to database 'laravel' at /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:66)
+[stacktrace]
+#0 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(66): PDO->__construct()
+#1 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(44): Illuminate\\Database\\Connectors\\Connector->createPdoConnection()
+#2 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection()
+#3 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(220): Illuminate\\Database\\Connectors\\MySqlConnector->connect()
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1298): call_user_func()
+#6 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(119): Illuminate\\Database\\Connection->getPdo()
+#7 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(29): Illuminate\\Database\\MySqlConnection->isMaria()
+#8 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Database/Console/ShowCommand.php(52): Illuminate\\Database\\MySqlConnection->getDriverTitle()
+#9 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\ShowCommand->handle()
+#10 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#12 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#13 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate\\Container\\BoundMethod::call()
+#14 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Console/Command.php(292): Illuminate\\Container\\Container->call()
+#15 /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Command/Command.php(341): Illuminate\\Console\\Command->execute()
+#16 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Console/Command.php(261): Symfony\\Component\\Console\\Command\\Command->run()
+#17 /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Application.php(1117): Illuminate\\Console\\Command->run()
+#18 /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Application.php(356): Symfony\\Component\\Console\\Application->doRunCommand()
+#19 /home/trex/workshop1/fullstackdevelopmentproject/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun()
+#20 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run()
+#21 /home/trex/workshop1/fullstackdevelopmentproject/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate\\Foundation\\Console\\Kernel->handle()
+#22 /home/trex/workshop1/fullstackdevelopmentproject/artisan(16): Illuminate\\Foundation\\Application->handleCommand()
+#23 {main}
+"} 
